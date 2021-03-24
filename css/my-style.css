@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/*Start the navbar*/
+header
+{
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.containerslogan
+{
+    display: flex;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    
+}
+.logo-icon
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 0.2em;
+}
+.containerslogan a{
+    margin-left: 5px;
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    color:rgb(98, 224, 115);
+}
+.containerslogan a:hover
+{
+    text-decoration: none;
+}
+.nav
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+}
+
+nav li
+{
+    margin-left: 1.3em;
+}
+
+nav li a
+{
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    color: black;
+    background-color: none;
+  
+}
+nav li a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+nav li a:hover
+{
+    text-decoration: none;
+    color: #1abc9c;
+}
+nav li a:hover::after
+{
+    width: 100%;
+    transition: width .2s;
+}
+.hamburger.btn
+{
+    display: none;
+}
+
+/*End the navbar*/
+
+
+
+/*Start the intro*/
+.intro {
+    background: url(/img/banner3.jpg);
+    background-size: cover;
+    height: 92.5vh;
+    text-align: center;
+    align-items: center;
+    border: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container2
+{
+    margin-top: 0px;
+
+}
+.container2 p{
+    width: 70%;
+    margin: 0 auto;
+}
+.container7 {
+    margin-bottom: 80px;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+.container8
+{
+    width: 70%;
+    margin: 0 auto;
+}
+.intro .logo1 {
+    height: 182px;
+    width: 143px;
+    
+}
+
+.intro .logo2 {
+    height: 143px;
+    width: 143px;
+    margin-bottom: 24px;
+    margin-left: 10px;
+}
+
+.intro h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 85px;
+    /* Độ cao dòng */
+}
+
+.intro p {
+    padding-top: 20px;
+    color: #f5f6fa;
+    font-size: 24px;
+    font-family: "Cabin", sans-serif;
+}
+
+
+/*End the Intro*/
+
+/*Start the pre-content-carasoul*/
+.pre-carasoul-content
+{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.pre-carasoul-content h1
+{
+    text-align: center;
+    font-size: 75px;
+    font-family: "Lobster", cursive;
+    color: #1abc9c;
+}
+.pre-carasoul-content h3
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Tahoma, sans-serif;
+}
+.pre-carasoul-content p
+{
+    font-size: 19px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/*Start thr Carasoul*/
+
+.carasoul
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.carasoul2
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.carasoul1
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .2s ease;
+    box-shadow: 10px 10px 5px grey;
+}
+.carasoul1:hover
+{
+    transform: scale(1.06);
+}
+
+/*Starting the job card*/
+
+.job-image
+{
+    width: 80%;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+}
+.image{
+    width: 300px;
+    height: 300px;
+}
+.text-image
+{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: Tahoma, sans-serif;
+    color: #1abc9c;
+    font-weight: 600;
+}
+.text-image:hover
+{
+    text-decoration: none;
+    color:rgb(36, 143, 81);
+}
+.cover{
+    padding-top: 30px;
+    cursor: pointer;
+    transition: transform .2s ease;
+    border-radius: 20px;
+    border: 2px solid #1abc9c;
+    box-shadow: 10px 10px 6px darkgrey;
+}
+.cover:hover
+{
+    transform:scale(1.06);
+}
+
+/*End the job card*/
+
+/*Starting the char area*/
+.chart-area
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.chart-intro
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    color:#1e5e51;
+}
+.chart-pre
+{
+    font-size: 30px;
+    color: #1e5e51;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.chart-text
+{
+    font-family: Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 27px;
+}
+
+/*Personel*/
+.personel
+{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
+.personel-pic
+{
+    height: 500px;
+    width: 550px;
+}
+
+/*End personel*/
+
+/*Start text-end*/
+.end-text
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    border-top: 2px solid #1e554a;
+    border-bottom: 2px solid #1e554a;
+    margin-bottom: 30px;
+}
+.end-text h1
+{
+    font-family: "Josefin Sans", sans-serif;
+    color: #1e554a;
+    font-size: 45px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+/*Media methods*/
+@media (max-width: 1300px)
+{
+    nav li a
+    {
+        font-size: 13px;
+    }
+}
+@media (max-width: 1000px)
+{
+    nav li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .containerslogan a{
+        margin-top: 20px;
+    }
+    /*The navbar changer*/
+    .hamburger-btn
+    {
+        display: grid;
+        height: 40px;
+        width: 50px;
+        cursor: pointer;
+        padding : 0em;
+        right: 0;
+        margin-top: 5px;
+        z-index: 99999;
+        position: absolute;
+    }
+    span
+    {
+        width: 30px;
+        height: 4px;
+        background: black;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        padding-bottom: -4em;
+    }
+    #navbar{
+        background-color: rgb(102, 105, 102);
+        height: 50vh;
+        display: none ;
+        padding-top: 65px;
+        font-size: 8px;
+        margin-top: 0px;
+    }
+    .nav li 
+    {
+        padding-bottom: 40px;
+    }
+    .nav li a{
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+    }
+    .nav li a:hover{
+        color: black;
+    }
+    /*End the navbar changer*/
+
+
+    /*The intro start here*/
+    .containerslogan a{
+        font-size: 15px;
+    }
+    .intro
+    {
+        height: 100vh;
+    }
+    .intro .logo1
+    {
+        height: 112px;
+        width: 88px;
+    }
+    .intro .logo2
+    {
+        height: 88px;
+        width: 88px;
+    }
+    .container7
+    {
+        margin-bottom: 20px;
+    }
+    .container8
+    {
+        width: 100%;
+    }
+    .container8 h1
+    {
+        font-size: 40px;
+        line-height: 1.3em;
+    }
+    .container2
+    {
+        margin-top: -60px;
+    }
+    .container2 p
+    {
+        font-size: 20px;
+    }
+    /*The intro end here*/
+
+
+    /*Starting pre-carasoul-content*/
+    .pre-carasoul-content h1
+    {
+        font-size: 50px;
+    }
+    .pre-carasoul-content h3
+    {
+        font-size: 25px;
+    }
+    .pre-carasoul-content p
+    {
+        font-size: 15px;
+    }
+    .carasoul1
+    {
+        margin-top: 20px;
+        width: 300px;
+        height: 250px;
+    }
+    .carasoul2
+    {
+        display: none;
+    }
+    .image
+    {
+        width: 280px;
+        height: 280px;
+    }
+    .text-image
+    {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .cover
+    {
+        margin-top: 30px;
+    }
+    /*Starting the Chart Area*/
+    .chart-pic
+    {
+        width: 300px;
+        height: 300px;
+        padding-right: 50px;
+        margin-bottom: 40px;
+    }
+    .chart-intro
+    {
+        font-size: 35px;
+    }
+    .chart-pre
+    {
+        font-size: 25px;
+    }
+    .chart-text
+    {
+        font-size: 20px;
+    }
+    /*End the Chart Area*/
+
+    /*Starting the Perso Area*/
+    .personel-pic
+    {
+        width: 330px;
+        height: 330px;
+        padding-right: 50px;
+    }
+
+
+}
+/*End media method*/
